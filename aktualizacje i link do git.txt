@@ -1,0 +1,42 @@
+wersja 1.prosta stronka z Czasem spędzonym w danej aplikacji
+wersja 2.dodany został krótki skrypt oraz trochę css przez co po kliknięciu w przycisk zmienia się krój strony z ciemnego na jasny i na odwrót
+<script>
+    function change() {
+        document.body.classList.toggle("dark");
+    }
+</script>
+onclick="change()"
+body.dark header {
+    background: linear-gradient(to right, #1a1a1a, #000000);
+    color: white;
+}
+
+body.dark .app {
+    background: #2b2b2b;
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .app p {
+    color: #80b3ff;
+}
+
+body.dark footer {
+    background: #111;
+    color: #ddd;
+}
+
+#toggle-theme {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+body.dark #toggle-theme {
+    background: #eee;
+    color: #111;
+}
+<button id="toggle-theme" >Zmień tryb</button>
